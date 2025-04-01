@@ -19,7 +19,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-  </head>
+  </head>  
   <body>
     <!-- header -->
     <header class="header">
@@ -29,18 +29,24 @@
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">E-Sevai</a>
+        <a href="#updates">Updates</a>
         <a href="#portfolio">Citizen Services</a>
+        <a href="#services">E-Sevai</a>
         <a href="#tools">Tools</a>
         <a href="#temp">Verify Certificate</a>
         <a href="#contact">Contact</a>
+        <a href="assets/cv.pdf" class="btn"><i class="bx bx-user">LOGIN</i></a>
+        
+      </div>
       </nav>
     </header>
+
+
 
     <!-- Home Section -->
 
     <section class="home" id="home">
+      
       
       <div class="home-content">
         <h3>Welcome🎉</h3>
@@ -69,56 +75,140 @@
       </div>
     </section>
 
-    <!-- about -->
-    <section class="about" id="about">
-      
-      <div class="about-content">
-        <h2 class="heading">About <span>GoVernCerT</span></h2>
-        <h3>உங்கள் நம்பகமான ஆன்லைன் அரசு சான்றிதழ் சேவை!</h3>
-        <p>
-          GoVernCerT என்பது உங்கள் ஒன்றே ஒரு ஆன்லைன் போர்டல், Government Certificates-ஐ விரைவாக, பாதுகாப்பாக மற்றும் எளிதாக பெற உதவுவதற்காக உருவாக்கப்பட்டுள்ளது! 🌐✅
-
-அரசு அலுவலகங்களுக்கு சென்று நீண்ட நேரம் காத்திருக்க வேண்டிய அவசியம் இல்லை! GoVernCerT மூலம், நீங்கள் வீட்டில் இருந்தபடியே அனைத்து முக்கியமான அரசு ஆவணங்களை சுலபமாக விண்ணப்பிக்கலாம்! 🏠📜
-
-  <li>
-    ✅ பிறந்த சான்றிதழ்
-  </li>
-  <li>
-    ✅ மரணச் சான்றிதழ்
-  </li>
-  <li>
-    ✅ சாதி, வருமான, குடியிருப்பு சான்றிதழ்கள் 📜)
-  </li>
-  <li>
-    ✅ பூர்வீகச் சொத்து & நிலம் தொடர்பான ஆவணங்கள் 🏠
-  </li>
-  <li>
-    ✅ திருமணச் சான்றிதழ் 💍
-  </li>
-  <li>
-    ✅ குடியிருப்பு சான்றிதழ்கள் 📜
-   <li>
-    ✅ முக்கிய அடையாள ஆவணங்கள் (ஆதார், ஓட்டுநர் உரிமம், பாஸ்போர்ட்)
-  </li>
-  <li>
-    ✅ வருமான, ஆதார, சமூகச் சான்றிதழ்கள்
-  </li>
-  <li>
-    ✅ ஓட்டுநர் உரிமம் & வாகன பதிவு 🚗
-  </li>
-  </li>
-  <li>
-    ✅ வருமான, ஆதார, சமூகச் சான்றிதழ்கள்
-  </li>
-  <li>
-    ✅ வணிக மற்றும் வரி தொடர்பான ஆவணங்கள் 💼
-  </li>
   
-        </p><p>
-        <a href="#" class="btn">Read More</a>
-      </p>
+<div class="marquee">
+  <span>"🏛️ அனைத்து அரசு சான்றிதழ்களும் ஒரே இடத்தில் – விரைவாக & பாதுகாப்பாக! 🖥️📜 இப்போது வீட்டிலிருந்தே அரசியல் சார்ந்த முக்கிய ஆவணங்களை விண்ணப்பிக்கவும், பதிவிறக்கவும், சரிபார்க்கவும்! ✅✨"</span>
+</div>
+
+
+<!--updates-->
+<section id="updates">
+  <h2>🔔 Latest Government Updates</h2>
+  <div class="govt-updates">
+      <span id="update-text">📰 Loading latest updates...</span>
+  </div>
+</section>
+
+
+  <!-- Swiper Slider -->
+  
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/pannn.jpg" alt="Certificate 1"></div>
+      <div class="swiper-slide"><img src="images/pari.jpg" alt="Certificate 2"></div>
+      <div class="swiper-slide"><img src="images/patta.jpg" alt="Certificate 3"></div>
+      <div class="swiper-slide"><img src="images/pass.jpg" alt="Certificate 4"></div>
+      <div class="swiper-slide"><img src="images/pannn.jpg" alt="Certificate 1"></div>
+      <div class="swiper-slide"><img src="images/aadhar.jpg" alt="Certificate 2"></div>
+      <div class="swiper-slide"><img src="images/patta.jpg" alt="Certificate 3"></div>
+      <div class="swiper-slide"><img src="images/vot.jpg" alt="Certificate 4"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+
+    <!-- Portfolio Section -->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Citizen <span>Services</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/aadhar.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>MY Aadhar</h4>
+            <p>
+              My own personal artwork website.
+            </p>
+            <a href="https://myaadhaar.uidai.gov.in/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/pannn.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>PAN CARD</h4>
+            <p>
+              A portfolio Website
+            </p>
+            <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/vot.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Voter ID</h4>
+            <p>
+              An E-Commerce website to sell the Artworks
+            </p>
+            <a href="https://voters.eci.gov.in/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/pari.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>PARIVAAHAN</h4>
+            <p>
+              Under Development
+            </p>
+            <a href="https://parivahan.gov.in/parivahan/"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/patta.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Patta/Chitta</h4>
+            <p>
+              Under Development
+            </p>
+            <a href="https://eservices.tn.gov.in/eservicesnew/index.html"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        
+        <div class="portfolio-box">
+          <img src="images/pass.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Passport</h4>
+            <p>
+              Under Development
+            </p>
+            <a href="https://www.passportindia.gov.in/AppOnlineProject/welcomeLink"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+
+        </div>
       </div>
     </section>
+
 
     <!-- services -->
 
@@ -225,84 +315,6 @@
     </section>
 
 
-    <!-- Portfolio Section -->
-
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Citizen <span>Services</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/aadhar.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>MY Aadhar</h4>
-            <p>
-              My own personal artwork website.
-            </p>
-            <a href="https://myaadhaar.uidai.gov.in/"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/pannn.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>PAN CARD</h4>
-            <p>
-              A portfolio Website
-            </p>
-            <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/vot.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Voter ID</h4>
-            <p>
-              An E-Commerce website to sell the Artworks
-            </p>
-            <a href="https://voters.eci.gov.in/"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/pari.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>PARIVAAHAN</h4>
-            <p>
-              Under Development
-            </p>
-            <a href="https://parivahan.gov.in/parivahan/"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="images/patta.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Patta/Chitta</h4>
-            <p>
-              Under Development
-            </p>
-            <a href="https://eservices.tn.gov.in/eservicesnew/index.html"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        
-        <div class="portfolio-box">
-          <img src="images/pass.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Passport</h4>
-            <p>
-              Under Development
-            </p>
-            <a href="https://www.passportindia.gov.in/AppOnlineProject/welcomeLink"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-
-        </div>
-      </div>
-    </section>
-
 
     
       <!---Tools-->
@@ -344,7 +356,6 @@
           </div>
         
       </section>
-
     <!--enpt-->  
     <section class="temp" id="temp">
       
@@ -355,15 +366,11 @@
           நீங்கள் GoVernCerT மூலமாக விண்ணப்பித்த அரசு சான்றிதழ்கள் அரசு அதிகாரிகளால் முழுமையாக பரிசீலிக்கப்பட்டு, அங்கீகரிக்கப்பட்டவுடன், அவற்றை எளிதாக ஆன்லைனில் சரிபார்த்துப் பதிவிறக்கலாம். 🎉📂
 
 இனி அலுவலகங்களுக்கு சென்று நேரம் வீணாக்க தேவையில்லை – உங்கள் முக்கிய ஆவணங்களை விரைவாக, பாதுகாப்பாக, & எளிதாக பெறுங்கள்! 🏆💼
-
- 
-  
         </p><p>
         <a href="https://tnedistrict.tn.gov.in/tneda/VerifyCerti.xhtml" class="btn">Download</a>
       </p>
       </div>
     </section>
-
 
 
     <!-- contact -->
@@ -391,6 +398,7 @@
       </form>
     </section>
 
+   
     <!-- footer -->
 
     <footer class="footer">
@@ -402,6 +410,9 @@
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
+
+    
+
 
     <!-- Scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
