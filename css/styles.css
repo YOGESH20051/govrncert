@@ -39,7 +39,7 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: rgb(6, 0, 24);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ section {
 }
 
 .header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    border-bottom: .1rem solid rgb(0, 0, 0);
 }
 
 .logo {
@@ -91,7 +91,7 @@ section {
 }
 
 .home-content h3 :nth-of-type(2) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 span {
@@ -207,8 +207,61 @@ span {
     margin: 2rem 0 3rem;
 }
 
-/******services******/
+/*******updates*******/
 
+/* Updates Section */
+#updates {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    background: #003366; /* Government Blue */
+    color: white;
+}
+
+/* Title Styling */
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ticker Box */
+.govt-updates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #ffcc00; /* Yellow Highlight */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fading Animation */
+#update-text {
+    color: rgb(0, 51, 102);
+    font-size: medium;
+    white-space: nowrap;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
+/******services******/
+.services{
+    background-color: #323946;
+}
 .services-content h3 {
     font-size: 2.6rem;
     text-align: center;
@@ -239,7 +292,7 @@ span {
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -493,6 +546,83 @@ span {
     cursor: pointer;
 }
 
+.swiper-slide {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background:rgb(31, 36, 45);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    justify-content: center;
+    padding-left: 38rem;
+    padding-right: 10rem;
+
+}
+
+
+  
+  /* Images inside Swiper */
+  .swiper-slide img {
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Zoom effect on hover */
+  .swiper-slide img:hover {
+    transform: scale(1.05);
+    color: #000;
+  }
+  
+
+/*****text***/
+ .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #002d5c;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+/***** Text Container *****/
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #001934;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/***** Moving Text *****/
+.marquee span {
+    color: #ffffff;
+    display: inline-block;
+    animation: marquee 12s linear infinite; /* Speed increased */
+}
+
+/***** Keyframes for Smooth & Fast Scroll *****/
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -662,3 +792,8 @@ span {
     }
 
 }
+
+
+
+
+
