@@ -53,12 +53,76 @@ ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
+
 // typed js
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Electronic Government Certificates', 'All Government Documents in One Place', 'Smart & Quick Govt Docs'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-    });
+  strings: ['Electronic Government Certificates', 'All Government Documents in One Place', 'Smart & Quick Govt Docs'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
+  });
+
+
+ // Government Latest Updates List
+const updates = [ "📰 New e-Certificate Services are now available!",
+"CBSE	Group B & C	Exam ",
+"⚠️ Important: Aadhaar Verification Process Updated!",
+"POWERGRID	Diploma Trainee	",
+"📢 Government Scholarship Applications Open!",
+"AIC	MT	Exam ",
+"💳 New Digital ID Cards Issued – Apply Now!",
+"Supreme Court	Junior Court Assistant	",
+"📄 Birth & Death Certificate Online Process Made Easier!",
+"BDL	MT	Exam ",
+];
+
+let index = 0;
+const updateText = document.getElementById("update-text");
+
+function updateNews() {
+  updateText.style.opacity = 0; // Fade Out
+  setTimeout(() => {
+      updateText.textContent = updates[index]; // Change News
+      updateText.style.opacity = 1; // Fade In
+      index = (index + 1) % updates.length; // Loop through news
+  }, 500);
+}
+
+// Change News Every 5 Seconds
+setInterval(updateNews, 5000);
+
+// Initial Load
+updateNews();
+
+
+
+
+//search
+
+const services = [
+  { name: "Birth Certificate", link: "https://www.india.gov.in/apply-birth-certificate" },
+  { name: "PMAY Scheme", link: "https://pmaymis.gov.in/" },
+  { name: "Driving License Renewal", link: "https://parivahan.gov.in/" },
+  { name: "Aadhaar Card Update", link: "https://uidai.gov.in/" },
+  { name: "Passport Application", link: "https://www.passportindia.gov.in/" },
+  { name: "PAN Card Application", link: "https://www.onlineservices.nsdl.com/paam/" },
+  { name: "Voter ID Application", link: "https://voters.eci.gov.in/Homepage" }          
+];
+
+function searchService() {
+  let input = document.getElementById("searchBox").value.toLowerCase();
+  let resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+  
+  let filteredServices = services.filter(service => service.name.toLowerCase().includes(input));
+  
+  filteredServices.forEach(service => {
+      let div = document.createElement("div");
+      div.className = "result-item";
+      div.innerHTML = service.name;
+      div.onclick = () => window.open(service.link, "_blank");
+      resultsDiv.appendChild(div);
+  });
+}
